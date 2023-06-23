@@ -1,0 +1,102 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+/* *********************** */
+
+/* Fondo */
+body{
+  background-color: hsl(185, 75%, 39%);
+}
+.fondotop{
+  position: fixed;
+  top: -40rem;
+  left: -40rem;
+  z-index: -1;
+
+}
+.fondotop img{
+  width: 100%;
+}
+
+.fondobottom{
+  position: fixed;
+  bottom: -40rem;
+  right: -40rem;
+  z-index: -1;
+}
+
+.fondobottom img{
+  width: 100%;
+}
+
+/* contenido */
+
+main{
+  margin-top: 20rem;
+}
+
+.contenido{
+  width: 350px;
+  margin: 0 auto;
+  background-color: white;
+  background-image: url("../images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  height: 380px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 2px 10px 10px hsla(229, 23%, 23%,0.2);
+}
+
+.perfil img{
+  border-radius: 100px;
+  border: 0.5rem white solid;
+  margin-top: 9rem;
+}
+
+.nombre, .ciudad,.total{
+  font-family: 'Kumbh Sans', sans-serif;
+  margin-top: 1rem;
+}
+
+.nombre,.indicador_ppal{
+  font-size: 1.8rem;
+}
+.letranombre,.indicador_ppal{
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+.letraedad,.ciudad,.nombre_indicador{
+  font-weight: 400;
+  color:hsl(227, 10%, 46%);
+}
+
+.ciudad{
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  padding-bottom: 3rem;
+  border-bottom: 1px hsla(0, 0%, 59%,0.5) solid;
+}
+.total{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+}
+.nombre_indicador{
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-top: 0.5rem;
+}
+
+footer{
+  margin-top: 1rem;
+  color: hsl(229, 23%, 23%);
+}
